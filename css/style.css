@@ -1,0 +1,407 @@
+/* #region general */
+
+/* general */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost-Regular";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "GildaDisplay-Regular";
+}
+
+p {
+  font-family: "Jost-Light";
+  line-height: 28px;
+}
+
+.container {
+  width: 75%;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Jost-Light";
+  src: url(../fonts/Jost-Light.ttf);
+}
+
+@font-face {
+  font-family: "Jost-Regular";
+  src: url(../fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+  font-family: "GildaDisplay-Regular";
+  src: url(../fonts/GildaDisplay-Regular.ttf);
+}
+
+/* #endregion */
+
+/* #region nav */
+/* start nav section */
+#nav.scrolled {
+  background-color: white;
+  color: black;
+}
+#nav.scrolled a,
+#nav.scrolled i {
+  color: black;
+}
+#nav.scrolled img {
+  filter: invert(1);
+}
+#nav.scrolled hr {
+  border-color: rgba(0, 0, 0, 0.533);
+}
+.hidden {
+  display: none;
+}
+
+#nav a {
+  color: white;
+  margin-inline: 10px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  transition: all 0.5s ease-out;
+}
+
+#nav,
+#nav i,
+#nav .hr1 {
+  transition: all 0.5s ease-in-out;
+}
+
+#nav:hover {
+  background-color: white;
+}
+
+#nav:hover a,
+#nav:hover i {
+  color: black;
+}
+
+#nav:hover .navbar-brand img {
+  filter: invert(1);
+}
+#nav:hover .hr1 {
+  border-color: rgba(0, 0, 0, 0.533);
+}
+#nav .nav-icons a i {
+  transition: all 0.3s ease-in;
+}
+#nav .nav-icons a:hover i {
+  color: #988463;
+}
+
+#nav .nav-item {
+  position: relative;
+}
+
+#nav .nav-item:hover a {
+  color: #988463;
+
+}
+
+#nav .nav-item a{
+  position: relative;
+}
+
+#nav .nav-item a::after{
+  content: "";
+  width: calc(100%);
+  height: .75px;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: all 0.3s ease-in;
+}
+
+#nav .nav-item a:hover::after {
+  background-color: #988463;
+
+}
+
+/* end nav section */
+/*  #endregion */
+
+/* #region home */
+/* start home section */
+#home {
+  background-image: url(../images/1@1.5x.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#home h1 {
+  width: 60%;
+}
+
+/* end home section */
+/* #endregion */
+
+/* #region about me */
+/* start about section */
+#about {
+  padding: 100px 0;
+}
+#about .about-left .about-img1 {
+  position: relative;
+  z-index: 5;
+}
+#about .about-left .about-img1 img {
+  max-width: 65%;
+}
+#about .about-left .about-img2 {
+  position: absolute;
+  top: 15%;
+  right: 10px;
+  z-index: 1;
+}
+
+#about .about-left .about-img2 img {
+  max-width: 65%;
+}
+
+#about .about-right {
+  padding-left: 65px;
+}
+
+#about .about-right a {
+  font-family: "GildaDisplay-Regular";
+  color: #988463;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+#about .about-right a i {
+  margin-left: 5px;
+  transition: all 0.3s ease-out;
+}
+
+#about .about-right a:hover i {
+  margin-left: 12px;
+}
+
+/* end about section */
+/* #endregion */
+
+/* #region my work */
+/* start my work section */
+#myWork {
+  background-color: #f2efea;
+  padding: 60px 0;
+}
+#myWork h4 {
+  text-align: center;
+  padding-top: 30px;
+  color: #988463;
+  font-size: 27px;
+}
+
+#myWork .col-2-img .first-child {
+  width: 60%;
+  margin: 35px 0;
+}
+#myWork .col-2-img .col2-inner {
+  width: 75%;
+}
+
+#myWork .col-2-img .snd-child {
+  width: 70%;
+  margin: 35px 0;
+}
+
+#myWork .col-3-img .first-child {
+  width: 95%;
+  margin: 35px 0;
+}
+
+#myWork .col-3-img .snd-child {
+  width: 60%;
+  padding-top: 30px;
+  margin: 35px 0;
+}
+
+.btn-outline-brown {
+  --bs-btn-color: #988463;
+  --bs-btn-border-color: #988463;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #988463;
+  --bs-btn-hover-border-color: #988463;
+  --bs-btn-focus-shadow-rgb: 220, 53, 69;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #988463;
+  --bs-btn-active-border-color: #988463;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #988463;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #988463;
+  --bs-gradient: none;
+  padding: 13px 30px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+/* end my work section */
+/* #endregion */
+
+/* #region clients */
+/* start clients section */
+#client {
+  padding: 120px 0;
+}
+
+#client h3 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#client .client-img {
+  width: 80%;
+}
+
+#client .clients-name {
+  color: #988463;
+  font-family: "GildaDisplay-Regular";
+  font-size: 22px;
+}
+.client-icons i {
+  padding: 0 15px;
+  font-size: 22px;
+  transition: all 0.25s ease-in;
+}
+.iColored {
+  color: #988463;
+}
+.notFunc {
+  color: #f2efea;
+}
+
+#client .client-icons i:hover {
+  color: #988463a1;
+}
+
+#client .clients-fixedHeight{
+  min-height: 14rem;
+}
+
+/* end clients section */
+/* #endregion */
+
+/* #region brands */
+/* start brand section */
+#brands {
+  background-color: #f2efea;
+  height: 50vh;
+}
+#brands .brands-img {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.brands-img::-webkit-scrollbar {
+  display: none;
+}
+
+#brands img {
+  margin: 0 30px;
+}
+
+/* end brand section */
+/* #endregion */
+
+/* #region available */
+/* start available section */
+#available {
+  background-image: url(../images/paralax11@2x-scaled.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 85vh;
+}
+
+#available a {
+  padding: 13px 30px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+/* end available section */
+/* #endregion */
+
+/* #region insta */
+/* start insta section */
+#insta {
+  background-color: #f2efea;
+  padding: 60px 0;
+}
+
+.insta-imgs img.instacol {
+  width: 20%;
+}
+.insta2col {
+  width: 50%;
+}
+
+.set1img {
+  width: 100%;
+}
+
+#insta a {
+  padding: 13px 30px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+/* end insta section */
+/* #endregion */
+
+/* #region footer */
+/* start footer section */
+#footer {
+  background-color: #f2efea;
+  padding: 120px 0 0 0;
+}
+
+#contact .contact-icons i {
+  font-size: 18px;
+  transition: all 0.3s ease-out;
+}
+
+#contact .contact-icons i:hover {
+  color: #988463;
+}
+
+#footer .footer-links a {
+  text-decoration: none;
+  color: black;
+  margin-inline: 20px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease-out;
+}
+#footer .footer-links a:hover {
+  color: #988463;
+}
+
+@media (max-width: 575px) {
+  #footer .footer-links li {
+    width: 50%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+#footer .all-rights {
+  font-size: 12px;
+}
+/* end contact section */
+/* #endregion */
